@@ -59,9 +59,15 @@ namespace Stopwatch
                 Thread.Sleep(1000);
             }
 
+            final();
+        }
+
+        static void final()
+        {
             Console.Clear();
-            Console.WriteLine("Finished Stopwatch.");
-            Thread.Sleep(2500);
+            Thread.Sleep(500);
+            Console.WriteLine("The time is finished.");
+            Thread.Sleep(2000);
             Menu();
         }
 
